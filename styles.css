@@ -1,0 +1,210 @@
+/* Global */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: #0f172a;
+  color: #e5e7eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Auth containers (login/register) */
+.auth-container {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.auth-container h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.auth-container input {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: inherit;
+}
+
+.auth-container button {
+  margin-top: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.auth-container button:hover {
+  background: #2563eb;
+}
+
+.auth-container p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* Builder / Home / Portfolios containers */
+.builder-container {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  width: 100%;
+  max-width: 640px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  color: #e5e7eb;
+}
+
+.builder-container h1 {
+  margin-bottom: 0.5rem;
+}
+
+.builder-container h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+#portfolioForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#portfolioForm input,
+#portfolioForm textarea {
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: inherit;
+}
+
+.builder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.builder-actions button {
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.5rem;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.builder-actions button:nth-child(2) {
+  background: #10b981;
+}
+
+.builder-actions button:nth-child(3) {
+  background: #ef4444;
+}
+
+/* Skill and project blocks */
+.skill-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.skill-input {
+  flex: 1;
+  padding: 0.5rem 0.7rem;
+  border-radius: 0.5rem;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: inherit;
+}
+
+.remove-skill-btn {
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.project-block {
+  border: 1px solid #4b5563;
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.9rem;
+  margin-bottom: 0.75rem;
+  background: #020617;
+}
+
+.project-block h3 {
+  margin-bottom: 0.5rem;
+  font-size: 0.98rem;
+}
+
+.project-block input,
+.project-block textarea {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.remove-project-btn {
+  padding: 0.35rem 0.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Card used in preview/portfolios */
+.card {
+  background: #020617;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #4b5563;
+  margin-bottom: 0.75rem;
+}
+
+/* Preview page */
+.preview-main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.preview-main section {
+  margin-bottom: 1.5rem;
+}
+
+.preview-main h1 {
+  margin-bottom: 0.25rem;
+}

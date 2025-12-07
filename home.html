@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Portfolio Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="builder-container">
+    <h1>Welcome</h1>
+    <p id="homeUserInfo"></p>
+
+    <div class="builder-actions">
+      <button type="button" onclick="window.location.href='builder.html'">
+        + Create / Edit Portfolio
+      </button>
+      <button type="button" onclick="window.location.href='portfolios.html'">
+        View Saved Portfolios
+      </button>
+      <button type="button" id="homeLogoutBtn">
+        Logout
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const currentUser = localStorage.getItem("currentUser");
+    const infoEl = document.getElementById("homeUserInfo");
+
+    if (!currentUser) {
+      alert("Please log in first.");
+      window.location.href = "login.html";
+    } else {
+      infoEl.textContent = "Logged in as: " + currentUser;
+    }
+
+    document.getElementById("homeLogoutBtn").addEventListener("click", () => {
+      localStorage.removeItem("currentUser");
+      window.location.href = "login.html";
+    });
+  </script>
+</body>
+</html>

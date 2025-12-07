@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="builder-container">
+    <h1>Portfolio Builder</h1>
+    <p id="builderUserInfo"></p>
+
+    <form id="portfolioForm">
+      <h2>Basic Info</h2>
+      <input id="name" type="text" placeholder="Full name" required />
+      <input id="role" type="text" placeholder="Role (e.g., Web Developer)" required />
+      <textarea id="bio" placeholder="Short bio" rows="3"></textarea>
+
+      <h2>Skills</h2>
+      <div id="skillsContainer">
+        <!-- JS will add skill rows here -->
+      </div>
+      <button type="button" id="addSkillBtn">Add Skill</button>
+
+      <h2>Projects</h2>
+      <div id="projectsContainer">
+        <!-- JS will add project blocks here -->
+      </div>
+      <button type="button" id="addProjectBtn">Add Project</button>
+
+      <h2>Contact</h2>
+      <input id="contactEmail" type="email" placeholder="Email" />
+      <input id="contactGithub" type="url" placeholder="GitHub URL" />
+      <input id="contactLinkedin" type="url" placeholder="LinkedIn URL" />
+
+      <div class="builder-actions">
+        <button type="submit">Save Portfolio</button>
+        <button type="button" id="previewBtn">Preview</button>
+        <button type="button" id="logoutBtn">Logout</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
